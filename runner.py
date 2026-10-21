@@ -164,8 +164,23 @@ def check_environment():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["check"])
-    parser.parse_args()
+    parser.add_argument("command", choices=["check", "setup"])
+    args = parser.parse_args()
+
+    if args.command == "setup":
+        setup_script = PROJECT_ROOT / "setup_benchmark.py"
+
+        if not setup_script.is_file():
+            print("[FAIL]/setup_benchmark.py is missing.")
+            return 1
+
+        result = subprocess.run(
+            [sys.executable, str(setup_script)],
+            cwd=PROJECT_ROOT,
+            check=False,
+        )
+        return result.returncode
+
     return check_environment()
 
 

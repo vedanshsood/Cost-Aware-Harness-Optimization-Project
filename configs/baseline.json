@@ -1,0 +1,16 @@
+{
+  "configuration_id": "cheap-default",
+  "variant": "default",
+  "repeat": 1,
+  "phase": "smoke_test",
+  "components": {
+    "custom_context_management": false,
+    "custom_failure_recovery": false
+  },
+  "agent": "terminus-2",
+  "model": "openrouter/qwen/qwen3-coder",
+  "task": "000-count-nuclei",
+  "attempts": 1,
+  "concurrency": 1,
+  "trial_retries": 0
+}

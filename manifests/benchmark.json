@@ -1,0 +1,5 @@
+{
+  "repository": "https://github.com/facebookresearch/TUA-Bench.git",
+  "commit": "3497fd320abcafaf4797424192c891a593fd7964",
+  "task_count": 120
+}

@@ -1,0 +1,22 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Downloaded benchmark and local runtime files
+.cache/
+vendor/
+
+# Temporary files
+*.tmp

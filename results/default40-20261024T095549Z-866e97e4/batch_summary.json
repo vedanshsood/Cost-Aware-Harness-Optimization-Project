@@ -1,0 +1,441 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "default40-20261024T095549Z-866e97e4",
+  "plan": {
+    "tasks": [
+      "000-count-nuclei",
+      "003-rebuild-energy-model",
+      "010-pivot-product-revenue",
+      "021-fill-ramp-chart",
+      "022-monthly-sales-line-chart",
+      "025-product-channel-pivots",
+      "028-civil-division-forms",
+      "033-prostate-volume-est",
+      "034-turn-off-dark-mode",
+      "041-baby-name-carl",
+      "044-etsy-saved-passwords",
+      "045-united-bag-fee-page",
+      "046-restore-tripadvisor-tab",
+      "049-remove-dog-background",
+      "051-hide-left-dock",
+      "053-make-palette-png",
+      "054-prostate-label-obj",
+      "057-set-undo-steps-100",
+      "059-make-summary-slide",
+      "062-add-baseball-audio",
+      "071-paste-image-docx",
+      "074-apa-references-review",
+      "080-convert-novel-epub",
+      "084-plate-thermal-sim",
+      "087-spreadsheet-to-doc-table",
+      "089-install-recommended-exts",
+      "090-ecs-grf-pass-rates",
+      "092-fix-tetris-bug",
+      "094-author-homepage-bookmarks",
+      "099-professor-contact-info",
+      "100-name-mountain-photos",
+      "101-rearrange-warm-tiles",
+      "102-daily-email-report",
+      "103-download-blog-pdfs",
+      "105-search-cell-b6",
+      "106-create-charles-ssh-user",
+      "116-bottom-left-page-numbers",
+      "117-comma-text-to-table",
+      "118-set-times-new-roman",
+      "119-tabstop-sentence-split"
+    ],
+    "config": {
+      "configuration_id": "cheap-default",
+      "variant": "default",
+      "repeat": 1,
+      "phase": "evaluation",
+      "components": {
+        "custom_context_management": false,
+        "custom_failure_recovery": false
+      },
+      "agent": "terminus-2",
+      "model": "openrouter/qwen/qwen3-coder",
+      "attempts": 1,
+      "concurrency": 1,
+      "trial_retries": 0
+    },
+    "benchmark_commit": "3497fd320abcafaf4797424192c891a593fd7964",
+    "image_id": "sha256:ebe6f82801bbb076665803c1bbba4cdcdda161e1201eb591fe127d3bdb3a6206",
+    "platform": "linux/amd64"
+  },
+  "tasks": [
+    {
+      "task_id": "000-count-nuclei",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0061499,
+      "trial_seconds": 107.081915,
+      "result_path": "000-count-nuclei/result.json"
+    },
+    {
+      "task_id": "003-rebuild-energy-model",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.042213099999999996,
+      "trial_seconds": 224.534145,
+      "result_path": "003-rebuild-energy-model/result.json"
+    },
+    {
+      "task_id": "010-pivot-product-revenue",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0136343,
+      "trial_seconds": 446.333935,
+      "result_path": "010-pivot-product-revenue/result.json"
+    },
+    {
+      "task_id": "021-fill-ramp-chart",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.010312,
+      "trial_seconds": 372.465461,
+      "result_path": "021-fill-ramp-chart/result.json"
+    },
+    {
+      "task_id": "022-monthly-sales-line-chart",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.015580200000000002,
+      "trial_seconds": 526.155599,
+      "result_path": "022-monthly-sales-line-chart/result.json"
+    },
+    {
+      "task_id": "025-product-channel-pivots",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0086126,
+      "trial_seconds": 332.167404,
+      "result_path": "025-product-channel-pivots/result.json"
+    },
+    {
+      "task_id": "028-civil-division-forms",
+      "status": "graded",
+      "official_reward": 1.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.012207,
+      "trial_seconds": 333.858237,
+      "result_path": "028-civil-division-forms/result.json"
+    },
+    {
+      "task_id": "033-prostate-volume-est",
+      "status": "graded",
+      "official_reward": 0.66,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0563978,
+      "trial_seconds": 669.385388,
+      "result_path": "033-prostate-volume-est/result.json"
+    },
+    {
+      "task_id": "034-turn-off-dark-mode",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.029821099999999996,
+      "trial_seconds": 352.111633,
+      "result_path": "034-turn-off-dark-mode/result.json"
+    },
+    {
+      "task_id": "041-baby-name-carl",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0045448,
+      "trial_seconds": 295.205933,
+      "result_path": "041-baby-name-carl/result.json"
+    },
+    {
+      "task_id": "044-etsy-saved-passwords",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0018025,
+      "trial_seconds": 268.354234,
+      "result_path": "044-etsy-saved-passwords/result.json"
+    },
+    {
+      "task_id": "045-united-bag-fee-page",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.00244005,
+      "trial_seconds": 423.767016,
+      "result_path": "045-united-bag-fee-page/result.json"
+    },
+    {
+      "task_id": "046-restore-tripadvisor-tab",
+      "status": "graded",
+      "official_reward": 1.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0059104,
+      "trial_seconds": 311.059338,
+      "result_path": "046-restore-tripadvisor-tab/result.json"
+    },
+    {
+      "task_id": "049-remove-dog-background",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0202304,
+      "trial_seconds": 463.029143,
+      "result_path": "049-remove-dog-background/result.json"
+    },
+    {
+      "task_id": "051-hide-left-dock",
+      "status": "execution_error",
+      "official_reward": null,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.016862199999999997,
+      "trial_seconds": 670.7528,
+      "result_path": "051-hide-left-dock/result.json"
+    },
+    {
+      "task_id": "053-make-palette-png",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.011768800000000001,
+      "trial_seconds": 476.730712,
+      "result_path": "053-make-palette-png/result.json"
+    },
+    {
+      "task_id": "054-prostate-label-obj",
+      "status": "graded",
+      "official_reward": 0.5,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0300042,
+      "trial_seconds": 739.440117,
+      "result_path": "054-prostate-label-obj/result.json"
+    },
+    {
+      "task_id": "057-set-undo-steps-100",
+      "status": "graded",
+      "official_reward": 1.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0082102,
+      "trial_seconds": 80.928352,
+      "result_path": "057-set-undo-steps-100/result.json"
+    },
+    {
+      "task_id": "059-make-summary-slide",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.021844400000000003,
+      "trial_seconds": 621.545678,
+      "result_path": "059-make-summary-slide/result.json"
+    },
+    {
+      "task_id": "062-add-baseball-audio",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.008498100000000001,
+      "trial_seconds": 587.744684,
+      "result_path": "062-add-baseball-audio/result.json"
+    },
+    {
+      "task_id": "071-paste-image-docx",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0266519,
+      "trial_seconds": 1003.765554,
+      "result_path": "071-paste-image-docx/result.json"
+    },
+    {
+      "task_id": "074-apa-references-review",
+      "status": "graded",
+      "official_reward": 0.8192588072544743,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.053654359999999984,
+      "trial_seconds": 988.845141,
+      "result_path": "074-apa-references-review/result.json"
+    },
+    {
+      "task_id": "080-convert-novel-epub",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0096565,
+      "trial_seconds": 468.497842,
+      "result_path": "080-convert-novel-epub/result.json"
+    },
+    {
+      "task_id": "084-plate-thermal-sim",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.5679857,
+      "trial_seconds": 1616.57752,
+      "result_path": "084-plate-thermal-sim/result.json"
+    },
+    {
+      "task_id": "087-spreadsheet-to-doc-table",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.011202499999999997,
+      "trial_seconds": 1018.546201,
+      "result_path": "087-spreadsheet-to-doc-table/result.json"
+    },
+    {
+      "task_id": "089-install-recommended-exts",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.013887,
+      "trial_seconds": 1055.566275,
+      "result_path": "089-install-recommended-exts/result.json"
+    },
+    {
+      "task_id": "090-ecs-grf-pass-rates",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.020597199999999996,
+      "trial_seconds": 976.231682,
+      "result_path": "090-ecs-grf-pass-rates/result.json"
+    },
+    {
+      "task_id": "092-fix-tetris-bug",
+      "status": "graded",
+      "official_reward": 1.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.018694500000000003,
+      "trial_seconds": 183.971958,
+      "result_path": "092-fix-tetris-bug/result.json"
+    },
+    {
+      "task_id": "094-author-homepage-bookmarks",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.016462699999999997,
+      "trial_seconds": 203.816691,
+      "result_path": "094-author-homepage-bookmarks/result.json"
+    },
+    {
+      "task_id": "099-professor-contact-info",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0159621,
+      "trial_seconds": 1245.770111,
+      "result_path": "099-professor-contact-info/result.json"
+    },
+    {
+      "task_id": "100-name-mountain-photos",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.006368019999999999,
+      "trial_seconds": 1824.795841,
+      "result_path": "100-name-mountain-photos/result.json"
+    },
+    {
+      "task_id": "101-rearrange-warm-tiles",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0065022,
+      "trial_seconds": 953.526099,
+      "result_path": "101-rearrange-warm-tiles/result.json"
+    },
+    {
+      "task_id": "102-daily-email-report",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.030917499999999994,
+      "trial_seconds": 1108.225771,
+      "result_path": "102-daily-email-report/result.json"
+    },
+    {
+      "task_id": "103-download-blog-pdfs",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.020780599999999996,
+      "trial_seconds": 892.379611,
+      "result_path": "103-download-blog-pdfs/result.json"
+    },
+    {
+      "task_id": "105-search-cell-b6",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.013776349999999998,
+      "trial_seconds": 948.117662,
+      "result_path": "105-search-cell-b6/result.json"
+    },
+    {
+      "task_id": "106-create-charles-ssh-user",
+      "status": "graded",
+      "official_reward": 1.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0047910999999999995,
+      "trial_seconds": 133.70364,
+      "result_path": "106-create-charles-ssh-user/result.json"
+    },
+    {
+      "task_id": "116-bottom-left-page-numbers",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.18504569999999998,
+      "trial_seconds": 950.569095,
+      "result_path": "116-bottom-left-page-numbers/result.json"
+    },
+    {
+      "task_id": "117-comma-text-to-table",
+      "status": "execution_error",
+      "official_reward": null,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.00025039,
+      "trial_seconds": 383.550467,
+      "result_path": "117-comma-text-to-table/result.json"
+    },
+    {
+      "task_id": "118-set-times-new-roman",
+      "status": "graded",
+      "official_reward": 1.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.011332849999999998,
+      "trial_seconds": 437.147753,
+      "result_path": "118-set-times-new-roman/result.json"
+    },
+    {
+      "task_id": "119-tabstop-sentence-split",
+      "status": "graded",
+      "official_reward": 0.0,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.09366830000000001,
+      "trial_seconds": 544.307032,
+      "result_path": "119-tabstop-sentence-split/result.json"
+    }
+  ],
+  "totals": {
+    "expected_tasks": 40,
+    "recorded_tasks": 40,
+    "graded_tasks": 38,
+    "error_or_ungraded_tasks": 2,
+    "complete_and_all_graded": false,
+    "mean_reward": null,
+    "graded_only_mean_reward": 0.20998049492774934,
+    "known_cost_usd": 1.4552315200000001,
+    "missing_cost_records": 0,
+    "total_cost_usd": 1.4552315200000001,
+    "note": "Graded-only mean is diagnostic, not the full evaluation score when tasks are missing or errored."
+  }
+}

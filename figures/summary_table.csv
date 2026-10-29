@@ -1,0 +1,4 @@
+Configuration,Total Tasks,Valid Rewards,Mean Reward (%),Known API Cost (USD),Missing Cost Records
+Cheap Baseline,40,38,21.0,1.4552,0
+Expensive Baseline,40,38,13.16,2.5693,2
+Improved Harness,40,38,32.22,5.0352,0

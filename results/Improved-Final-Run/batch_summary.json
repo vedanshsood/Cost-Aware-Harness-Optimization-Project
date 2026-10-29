@@ -1,0 +1,4937 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "Improved-Final-Run",
+  "plan": {
+    "tasks": [
+      "000-count-nuclei",
+      "003-rebuild-energy-model",
+      "010-pivot-product-revenue",
+      "021-fill-ramp-chart",
+      "022-monthly-sales-line-chart",
+      "025-product-channel-pivots",
+      "028-civil-division-forms",
+      "033-prostate-volume-est",
+      "034-turn-off-dark-mode",
+      "041-baby-name-carl",
+      "044-etsy-saved-passwords",
+      "045-united-bag-fee-page",
+      "046-restore-tripadvisor-tab",
+      "049-remove-dog-background",
+      "051-hide-left-dock",
+      "053-make-palette-png",
+      "054-prostate-label-obj",
+      "057-set-undo-steps-100",
+      "059-make-summary-slide",
+      "062-add-baseball-audio",
+      "071-paste-image-docx",
+      "074-apa-references-review",
+      "080-convert-novel-epub",
+      "084-plate-thermal-sim",
+      "087-spreadsheet-to-doc-table",
+      "089-install-recommended-exts",
+      "090-ecs-grf-pass-rates",
+      "092-fix-tetris-bug",
+      "094-author-homepage-bookmarks",
+      "099-professor-contact-info",
+      "100-name-mountain-photos",
+      "101-rearrange-warm-tiles",
+      "102-daily-email-report",
+      "103-download-blog-pdfs",
+      "105-search-cell-b6",
+      "106-create-charles-ssh-user",
+      "116-bottom-left-page-numbers",
+      "117-comma-text-to-table",
+      "118-set-times-new-roman",
+      "119-tabstop-sentence-split"
+    ],
+    "config": {
+      "configuration_id": "cheap-bounded-evidence-diagnostic",
+      "variant": "bounded-evidence-diagnostic",
+      "repeat": 1,
+      "phase": "evaluation",
+      "components": {
+        "custom_context_management": false,
+        "custom_failure_recovery": true,
+        "idle_response_guard": true,
+        "conditional_recovery_reminder": true,
+        "pre_submission_artifact_validation": true,
+        "completion_evidence_guidance": true,
+        "conditional_diagnostic_reminder": true,
+        "unconditional_recovery_guidance": false
+      },
+      "agent": "harness.bounded_agent:BoundedTerminus2",
+      "model": "openrouter/qwen/qwen3-coder",
+      "attempts": 1,
+      "concurrency": 1,
+      "trial_retries": 0,
+      "idle_response_limit": 3,
+      "recovery_reminder_at": 2,
+      "max_recovery_reminders_per_task": 1,
+      "artifact_validation": {
+        "max_checks": 2,
+        "max_paths_per_check": 100,
+        "execution_timeout_sec": 30,
+        "scope": "Explicit outputs, public JSON declarations, accepted filename alternatives, Python syntax, image rename integrity, and basic browser-PDF checks",
+        "feedback": "Existing completion-confirmation turn",
+        "semantic_correctness_checked": false
+      }
+    },
+    "benchmark_commit": "3497fd320abcafaf4797424192c891a593fd7964",
+    "image_id": "sha256:ebe6f82801bbb076665803c1bbba4cdcdda161e1201eb591fe127d3bdb3a6206",
+    "platform": "linux/amd64",
+    "harness_sha256": {
+      "harness/__init__.py": "e4b00e90750bcd6ffe5e4397759add28a4adb658bae6e4c3a0dc17fe351bc2cb",
+      "harness/recovery_agent.py": "54f66e77ca69373e19a0170114ce422abe9c6e3e5f03c7a1ac4fceaebe0720bd",
+      "harness/bounded_agent.py": "41d614a84a13c55d07caf78a728101051f60f6cf06fca0d375ed590b8c9d7d03",
+      "harness/artifact_checks.py": "49ab621b19f11857377369e869a4550b46ee99ba75465774d10869a4c596ec40"
+    },
+    "runner_sha256": "579f74dccf0192a2bf7eb0864a24e8adefcf0909ea1e433d24e78e0bf9934d24",
+    "shared_helpers_sha256": "86ff31b7d38f66e76cb4a7ba94a6c2368e865f91e36a2574402fa234b1a1679b",
+    "output_coverage": [
+      {
+        "task_id": "000-count-nuclei",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/artifacts/nuclei_count.txt"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "003-rebuild-energy-model",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/artifacts",
+          "/app/artifacts/reconstructed_building.osm",
+          "/app/artifacts/generated_building.idf",
+          "/app/artifacts/energyplus_run",
+          "/app/artifacts/render_views",
+          "/app/artifacts/building_render.png",
+          "/app/artifacts/simulation_summary.txt"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "010-pivot-product-revenue",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/BoomerangSales.xlsx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "021-fill-ramp-chart",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/RampUpAndDown.xlsx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "022-monthly-sales-line-chart",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/SalesRep.xlsx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "025-product-channel-pivots",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/SummerSales.xlsx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "028-civil-division-forms",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "033-prostate-volume-est",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/artifacts/prostate_volume.txt"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "034-turn-off-dark-mode",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "041-baby-name-carl",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "044-etsy-saved-passwords",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "045-united-bag-fee-page",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "046-restore-tripadvisor-tab",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "049-remove-dog-background",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/dog_without_background.png"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "051-hide-left-dock",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "053-make-palette-png",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/palette_computer.png"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "054-prostate-label-obj",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/artifacts",
+          "/app/artifacts/prostate_model.obj"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "057-set-undo-steps-100",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "059-make-summary-slide",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/Forests.pptx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "062-add-baseball-audio",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/Mady_and_Mia_Baseball.pptx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "071-paste-image-docx",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/home/user/Desktop/image.docx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "074-apa-references-review",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/home/user/Desktop/students work/case study.docx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "080-convert-novel-epub",
+        "status": "dynamic_checks_planned",
+        "selected_outputs": [],
+        "planned_check_kinds": [
+          "output_alternatives"
+        ],
+        "reason": "Resolve accepted filenames and their directory from the instruction. Require at least one output to pass basic package checks. Availability is confirmed only when the task-container preparation snapshot is created."
+      },
+      {
+        "task_id": "084-plate-thermal-sim",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/artifacts/simple_plate_case",
+          "/app/artifacts/simple_plate_case/120/T",
+          "/app/artifacts/simple_plate_case/log.laplacianFoam",
+          "/app/artifacts/simple_plate_result_120s.json",
+          "/app/artifacts/simple_plate_top_view.svg"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "087-spreadsheet-to-doc-table",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/price.docx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "089-install-recommended-exts",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "090-ecs-grf-pass-rates",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/Fundings/supported_rate.xlsx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "092-fix-tetris-bug",
+        "status": "dynamic_checks_planned",
+        "selected_outputs": [],
+        "planned_check_kinds": [
+          "python_syntax"
+        ],
+        "reason": "Discover Python sources from public setup metadata. Check syntax and record whether contents changed. Functional bug repair is not established. Availability is confirmed only when the task-container preparation snapshot is created."
+      },
+      {
+        "task_id": "094-author-homepage-bookmarks",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "099-professor-contact-info",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/home/user/Desktop/Professor_Contact.xlsx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "100-name-mountain-photos",
+        "status": "dynamic_checks_planned",
+        "selected_outputs": [],
+        "planned_check_kinds": [
+          "image_rename_integrity"
+        ],
+        "reason": "Capture original image names and hashes before execution. Check renamed files preserve image bytes. Mountain identification is not established. Availability is confirmed only when the task-container preparation snapshot is created."
+      },
+      {
+        "task_id": "101-rearrange-warm-tiles",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/rearranged.png"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "102-daily-email-report",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/report.xlsx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "103-download-blog-pdfs",
+        "status": "dynamic_checks_planned",
+        "selected_outputs": [
+          "/home/user/Documents/Blog"
+        ],
+        "planned_check_kinds": [
+          "browser_pdf_outputs"
+        ],
+        "reason": "Use setup-declared initial URLs and snapshot existing PDFs. Check new or modified output count and basic PDF header/end markers. Article identity is not established. Availability is confirmed only when the task-container preparation snapshot is created."
+      },
+      {
+        "task_id": "105-search-cell-b6",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "106-create-charles-ssh-user",
+        "status": "file_check_inapplicable",
+        "selected_outputs": [],
+        "planned_check_kinds": [],
+        "reason": "Requires browser, application, or system state. That state is not automatically file-validated."
+      },
+      {
+        "task_id": "116-bottom-left-page-numbers",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/LibreOffice_Open_Source_Word_Processing.docx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "117-comma-text-to-table",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/Graphemes_Sound_Letter_Patterns.docx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "118-set-times-new-roman",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/Dublin_Zoo_Intro.docx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      },
+      {
+        "task_id": "119-tabstop-sentence-split",
+        "status": "basic_file_checks_planned",
+        "selected_outputs": [
+          "/app/04 CHIN9505 EBook Purchasing info 2021 Jan.docx"
+        ],
+        "planned_check_kinds": [
+          "basic_file"
+        ],
+        "reason": "Check explicit output paths. Supported required children from public input JSON are captured before model execution. Semantic correctness is not established."
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "task_id": "000-count-nuclei",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.04359570000000001,
+      "input_tokens": 189378,
+      "output_tokens": 7511,
+      "cache_tokens": 104176,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/artifacts/nuclei_count.txt"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/artifacts/nuclei_count.txt"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.935626,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/artifacts/nuclei_count.txt",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.891799
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/artifacts/nuclei_count.txt",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.896431
+          }
+        ],
+        "validation_seconds": 1.78823,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "000-count-nuclei/result.json"
+    },
+    {
+      "task_id": "003-rebuild-energy-model",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.14251215000000003,
+      "input_tokens": 748409,
+      "output_tokens": 9073,
+      "cache_tokens": 450832,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/artifacts",
+          "/app/artifacts/reconstructed_building.osm",
+          "/app/artifacts/generated_building.idf",
+          "/app/artifacts/energyplus_run",
+          "/app/artifacts/render_views",
+          "/app/artifacts/building_render.png",
+          "/app/artifacts/simulation_summary.txt"
+        ],
+        "manifest_paths": [
+          "/app/input/task_plan.json"
+        ],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/artifacts",
+            "/app/artifacts/reconstructed_building.osm",
+            "/app/artifacts/generated_building.idf",
+            "/app/artifacts/energyplus_run",
+            "/app/artifacts/render_views",
+            "/app/artifacts/building_render.png",
+            "/app/artifacts/simulation_summary.txt",
+            "/app/artifacts/energyplus_run/eplusout.mtr",
+            "/app/artifacts/energyplus_run/eplusout.sql",
+            "/app/artifacts/energyplus_run/eplustbl.htm",
+            "/app/artifacts/energyplus_run/eplusout.end",
+            "/app/artifacts/energyplus_run/eplusout.err"
+          ],
+          "declaration_sources": [
+            "/app/input/task_plan.json"
+          ],
+          "declared_output_groups": [
+            {
+              "manifest": "/app/input/task_plan.json",
+              "field": "$.required_simulation_artifacts",
+              "paths": [
+                "/app/artifacts/energyplus_run/eplusout.mtr",
+                "/app/artifacts/energyplus_run/eplusout.sql",
+                "/app/artifacts/energyplus_run/eplustbl.htm",
+                "/app/artifacts/energyplus_run/eplusout.end",
+                "/app/artifacts/energyplus_run/eplusout.err"
+              ]
+            }
+          ],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.914208,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/app/artifacts",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/reconstructed_building.osm",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/generated_building.idf",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/render_views",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/building_render.png",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Output is not a nonempty regular file."
+              },
+              {
+                "path": "/app/artifacts/simulation_summary.txt",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.mtr",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Output is not a nonempty regular file."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.sql",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Output is not a nonempty regular file."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplustbl.htm",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Output is not a nonempty regular file."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.end",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Output is not a nonempty regular file."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.err",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Output is not a nonempty regular file."
+              },
+              {
+                "path": "/app/artifacts/out.osw",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/workflow.osw",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/failed.job",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/data_point_out.json",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/data_point.zip",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/started.job",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/run.log",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [
+              "/app/input/task_plan.json"
+            ],
+            "declared_output_groups": [
+              {
+                "manifest": "/app/input/task_plan.json",
+                "field": "$.required_simulation_artifacts",
+                "paths": [
+                  "/app/artifacts/energyplus_run/eplusout.mtr",
+                  "/app/artifacts/energyplus_run/eplusout.sql",
+                  "/app/artifacts/energyplus_run/eplustbl.htm",
+                  "/app/artifacts/energyplus_run/eplusout.end",
+                  "/app/artifacts/energyplus_run/eplusout.err"
+                ]
+              }
+            ],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.001214
+          },
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/app/artifacts",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/reconstructed_building.osm",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/generated_building.idf",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/render_views",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/building_render.png",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Invalid PNG signature."
+              },
+              {
+                "path": "/app/artifacts/simulation_summary.txt",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.mtr",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.sql",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplustbl.htm",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.end",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/energyplus_run/eplusout.err",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/out.osw",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/workflow.osw",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/failed.job",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/data_point_out.json",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/data_point.zip",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/started.job",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/run/run.log",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [
+              "/app/input/task_plan.json"
+            ],
+            "declared_output_groups": [
+              {
+                "manifest": "/app/input/task_plan.json",
+                "field": "$.required_simulation_artifacts",
+                "paths": [
+                  "/app/artifacts/energyplus_run/eplusout.mtr",
+                  "/app/artifacts/energyplus_run/eplusout.sql",
+                  "/app/artifacts/energyplus_run/eplustbl.htm",
+                  "/app/artifacts/energyplus_run/eplusout.end",
+                  "/app/artifacts/energyplus_run/eplusout.err"
+                ]
+              }
+            ],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.992741
+          }
+        ],
+        "validation_seconds": 1.9939550000000001,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "003-rebuild-energy-model/result.json"
+    },
+    {
+      "task_id": "010-pivot-product-revenue",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.017289950000000002,
+      "input_tokens": 88439,
+      "output_tokens": 3262,
+      "cache_tokens": 63632,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/BoomerangSales.xlsx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/BoomerangSales.xlsx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.888986,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/BoomerangSales.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.939789
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/BoomerangSales.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.997551
+          }
+        ],
+        "validation_seconds": 1.9373399999999998,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "010-pivot-product-revenue/result.json"
+    },
+    {
+      "task_id": "021-fill-ramp-chart",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.047092200000000015,
+      "input_tokens": 361474,
+      "output_tokens": 6650,
+      "cache_tokens": 340000,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/RampUpAndDown.xlsx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/RampUpAndDown.xlsx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.908066,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/RampUpAndDown.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.894715
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/RampUpAndDown.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.875644
+          }
+        ],
+        "validation_seconds": 1.770359,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "021-fill-ramp-chart/result.json"
+    },
+    {
+      "task_id": "022-monthly-sales-line-chart",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.007996,
+      "input_tokens": 40568,
+      "output_tokens": 2632,
+      "cache_tokens": 34032,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/SalesRep.xlsx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/SalesRep.xlsx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.890325,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/SalesRep.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.895196
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/SalesRep.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.884815
+          }
+        ],
+        "validation_seconds": 1.780011,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "022-monthly-sales-line-chart/result.json"
+    },
+    {
+      "task_id": "025-product-channel-pivots",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.05361209999999998,
+      "input_tokens": 394889,
+      "output_tokens": 8467,
+      "cache_tokens": 366608,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/SummerSales.xlsx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/SummerSales.xlsx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.930715,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/SummerSales.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.902539
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/SummerSales.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.910022
+          }
+        ],
+        "validation_seconds": 1.812561,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "025-product-channel-pivots/result.json"
+    },
+    {
+      "task_id": "028-civil-division-forms",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.10088895,
+      "input_tokens": 640575,
+      "output_tokens": 7201,
+      "cache_tokens": 497584,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 0.909968,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.4e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 9e-06
+          }
+        ],
+        "validation_seconds": 2.3e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "028-civil-division-forms/result.json"
+    },
+    {
+      "task_id": "033-prostate-volume-est",
+      "status": "execution_error",
+      "official_reward": null,
+      "has_exception": true,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.02937786,
+      "input_tokens": 124544,
+      "output_tokens": 4152,
+      "cache_tokens": 66432,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/artifacts/prostate_volume.txt"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/artifacts/prostate_volume.txt"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.922756,
+        "max_checks": 2,
+        "check_attempts": 0,
+        "checks_performed": 0,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [],
+        "validation_seconds": 0,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "033-prostate-volume-est/result.json"
+    },
+    {
+      "task_id": "034-turn-off-dark-mode",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.020597449999999996,
+      "input_tokens": 147687,
+      "output_tokens": 2250,
+      "cache_tokens": 130304,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 3.609252,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.9e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 9e-06
+          }
+        ],
+        "validation_seconds": 2.8000000000000003e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "034-turn-off-dark-mode/result.json"
+    },
+    {
+      "task_id": "041-baby-name-carl",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.012140600000000001,
+      "input_tokens": 80794,
+      "output_tokens": 3336,
+      "cache_tokens": 77168,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 0.913057,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.4e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.9e-05
+          }
+        ],
+        "validation_seconds": 3.3e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "041-baby-name-carl/result.json"
+    },
+    {
+      "task_id": "044-etsy-saved-passwords",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.042391,
+      "input_tokens": 340308,
+      "output_tokens": 4353,
+      "cache_tokens": 320272,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 0.927128,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.4e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 9e-06
+          }
+        ],
+        "validation_seconds": 2.3e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "044-etsy-saved-passwords/result.json"
+    },
+    {
+      "task_id": "045-united-bag-fee-page",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0056633,
+      "input_tokens": 28765,
+      "output_tokens": 1805,
+      "cache_tokens": 23856,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 0.900391,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.5e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.1e-05
+          }
+        ],
+        "validation_seconds": 2.6000000000000002e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "045-united-bag-fee-page/result.json"
+    },
+    {
+      "task_id": "046-restore-tripadvisor-tab",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0021139,
+      "input_tokens": 8097,
+      "output_tokens": 888,
+      "cache_tokens": 6016,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 0.897387,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.4e-05
+          }
+        ],
+        "validation_seconds": 2.4e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "046-restore-tripadvisor-tab/result.json"
+    },
+    {
+      "task_id": "049-remove-dog-background",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.030927139999999995,
+      "input_tokens": 243071,
+      "output_tokens": 6630,
+      "cache_tokens": 237328,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/dog_without_background.png"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/dog_without_background.png"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.926247,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/dog_without_background.png",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.90121
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/dog_without_background.png",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.942934
+          }
+        ],
+        "validation_seconds": 1.844144,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "049-remove-dog-background/result.json"
+    },
+    {
+      "task_id": "051-hide-left-dock",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.009759959999999998,
+      "input_tokens": 63327,
+      "output_tokens": 2771,
+      "cache_tokens": 59280,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 0.945185,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.4e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 7e-06
+          }
+        ],
+        "validation_seconds": 2.1e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "051-hide-left-dock/result.json"
+    },
+    {
+      "task_id": "053-make-palette-png",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0060104,
+      "input_tokens": 35176,
+      "output_tokens": 2008,
+      "cache_tokens": 32752,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/palette_computer.png"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/palette_computer.png"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.989327,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/palette_computer.png",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.906964
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/palette_computer.png",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.932228
+          }
+        ],
+        "validation_seconds": 1.839192,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "053-make-palette-png/result.json"
+    },
+    {
+      "task_id": "054-prostate-label-obj",
+      "status": "graded",
+      "official_reward": 0.5,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.16991719999999996,
+      "input_tokens": 1493990,
+      "output_tokens": 13701,
+      "cache_tokens": 1459904,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/artifacts",
+          "/app/artifacts/prostate_model.obj"
+        ],
+        "manifest_paths": [
+          "/app/input/task_plan.json"
+        ],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/artifacts",
+            "/app/artifacts/prostate_model.obj"
+          ],
+          "declaration_sources": [
+            "/app/input/task_plan.json"
+          ],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.937772,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/artifacts",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/prostate_model.obj",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/models.mrml",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/prostate_2.vtk",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/README.md",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/prostate_1.vtk",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [
+              "/app/input/task_plan.json"
+            ],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.893656
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/artifacts",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/prostate_model.obj",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/SUMMARY.txt",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/models.mrml",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/prostate_2.vtk",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/README.md",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/prostate_1.vtk",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [
+              "/app/input/task_plan.json"
+            ],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.914018
+          }
+        ],
+        "validation_seconds": 1.807674,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "054-prostate-label-obj/result.json"
+    },
+    {
+      "task_id": "057-set-undo-steps-100",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0045631000000000005,
+      "input_tokens": 24957,
+      "output_tokens": 1716,
+      "cache_tokens": 23200,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 1.084384,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 9e-06
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.5e-05
+          }
+        ],
+        "validation_seconds": 2.4e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "057-set-undo-steps-100/result.json"
+    },
+    {
+      "task_id": "059-make-summary-slide",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0532154,
+      "input_tokens": 410882,
+      "output_tokens": 9394,
+      "cache_tokens": 397216,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/Forests.pptx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/Forests.pptx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.927999,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Forests.pptx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.881051
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Forests.pptx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.901307
+          }
+        ],
+        "validation_seconds": 1.7823579999999999,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "059-make-summary-slide/result.json"
+    },
+    {
+      "task_id": "062-add-baseball-audio",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0131731,
+      "input_tokens": 86279,
+      "output_tokens": 3747,
+      "cache_tokens": 82288,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/Mady_and_Mia_Baseball.pptx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/Mady_and_Mia_Baseball.pptx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.940128,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Mady_and_Mia_Baseball.pptx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.894713
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Mady_and_Mia_Baseball.pptx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.899233
+          }
+        ],
+        "validation_seconds": 1.793946,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "062-add-baseball-audio/result.json"
+    },
+    {
+      "task_id": "071-paste-image-docx",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.01851654,
+      "input_tokens": 145573,
+      "output_tokens": 4078,
+      "cache_tokens": 140864,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/home/user/Desktop/image.docx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/home/user/Desktop/image.docx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.982001,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Desktop/image.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.971399
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Desktop/image.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.942751
+          }
+        ],
+        "validation_seconds": 1.91415,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "071-paste-image-docx/result.json"
+    },
+    {
+      "task_id": "074-apa-references-review",
+      "status": "graded",
+      "official_reward": 0.8192588072544743,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0161971,
+      "input_tokens": 104091,
+      "output_tokens": 3581,
+      "cache_tokens": 93056,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/home/user/Desktop/students work/case study.docx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/home/user/Desktop/students work/case study.docx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.953818,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Desktop/students work/case study.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.081306
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Desktop/students work/case study.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.92775
+          }
+        ],
+        "validation_seconds": 2.009056,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "074-apa-references-review/result.json"
+    },
+    {
+      "task_id": "080-convert-novel-epub",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0111978,
+      "input_tokens": 70966,
+      "output_tokens": 3236,
+      "cache_tokens": 66640,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [
+            {
+              "directory": "/home/user/Documents/Novels/Pass Through",
+              "paths": [
+                "/home/user/Documents/Novels/Pass Through/Pass Through.epub",
+                "/home/user/Documents/Novels/Pass Through/Pass_Through.epub",
+                "/home/user/Documents/Novels/Pass Through/pass_through.epub"
+              ]
+            }
+          ],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.988183,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Documents/Novels/Pass Through",
+                "kind": "output_alternatives",
+                "valid": true,
+                "reason": "At least one permitted output must pass basic file checks: /home/user/Documents/Novels/Pass Through/Pass Through.epub, /home/user/Documents/Novels/Pass Through/Pass_Through.epub, /home/user/Documents/Novels/Pass Through/pass_through.epub",
+                "candidates": [
+                  {
+                    "path": "/home/user/Documents/Novels/Pass Through/Pass Through.epub",
+                    "valid": true,
+                    "kind": "basic_file",
+                    "reason": "Basic checks passed; semantic correctness is unverified."
+                  },
+                  {
+                    "path": "/home/user/Documents/Novels/Pass Through/Pass_Through.epub",
+                    "valid": false,
+                    "kind": "basic_file",
+                    "reason": "ValueError: Required path does not exist."
+                  },
+                  {
+                    "path": "/home/user/Documents/Novels/Pass Through/pass_through.epub",
+                    "valid": false,
+                    "kind": "basic_file",
+                    "reason": "ValueError: Required path does not exist."
+                  }
+                ]
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.955101
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Documents/Novels/Pass Through",
+                "kind": "output_alternatives",
+                "valid": true,
+                "reason": "At least one permitted output must pass basic file checks: /home/user/Documents/Novels/Pass Through/Pass Through.epub, /home/user/Documents/Novels/Pass Through/Pass_Through.epub, /home/user/Documents/Novels/Pass Through/pass_through.epub",
+                "candidates": [
+                  {
+                    "path": "/home/user/Documents/Novels/Pass Through/Pass Through.epub",
+                    "valid": true,
+                    "kind": "basic_file",
+                    "reason": "Basic checks passed; semantic correctness is unverified."
+                  },
+                  {
+                    "path": "/home/user/Documents/Novels/Pass Through/Pass_Through.epub",
+                    "valid": false,
+                    "kind": "basic_file",
+                    "reason": "ValueError: Required path does not exist."
+                  },
+                  {
+                    "path": "/home/user/Documents/Novels/Pass Through/pass_through.epub",
+                    "valid": false,
+                    "kind": "basic_file",
+                    "reason": "ValueError: Required path does not exist."
+                  }
+                ]
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.938766
+          }
+        ],
+        "validation_seconds": 1.893867,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "080-convert-novel-epub/result.json"
+    },
+    {
+      "task_id": "084-plate-thermal-sim",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.34860640000000004,
+      "input_tokens": 3103386,
+      "output_tokens": 19869,
+      "cache_tokens": 3011392,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/artifacts/simple_plate_case",
+          "/app/artifacts/simple_plate_case/120/T",
+          "/app/artifacts/simple_plate_case/log.laplacianFoam",
+          "/app/artifacts/simple_plate_result_120s.json",
+          "/app/artifacts/simple_plate_top_view.svg"
+        ],
+        "manifest_paths": [
+          "/app/input/simple_plate_params.json"
+        ],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/artifacts/simple_plate_case",
+            "/app/artifacts/simple_plate_case/120/T",
+            "/app/artifacts/simple_plate_case/log.laplacianFoam",
+            "/app/artifacts/simple_plate_result_120s.json",
+            "/app/artifacts/simple_plate_top_view.svg"
+          ],
+          "declaration_sources": [
+            "/app/input/simple_plate_params.json"
+          ],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.034513,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/app/artifacts/simple_plate_case",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/120/T",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/log.laplacianFoam",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_result_120s.json",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_top_view.svg",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/0/cellLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/0/pointLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/0/T",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/fvSolution",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/snappyHexMeshDict",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/blockMeshDict",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/controlDict",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/fvSchemes",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/physicalProperties",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/transportProperties",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/triSurface/simple_plate_regions.stl",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/level0Edge",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/cellLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/pointZones",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/owner",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/pointLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/neighbour",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/faces",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/points",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/cellZones",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/faceZones",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/boundary",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/surfaceIndex",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [
+              "/app/input/simple_plate_params.json"
+            ],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.156433
+          },
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/app/artifacts/simple_plate_case",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/120/T",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/log.laplacianFoam",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_result_120s.json",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_top_view.svg",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/0/cellLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/0/pointLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/0/T",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/fvSolution",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/snappyHexMeshDict",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/blockMeshDict",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/controlDict",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/system/fvSchemes",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/physicalProperties",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/transportProperties",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/triSurface/simple_plate_regions.stl",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/level0Edge",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/cellLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/pointZones",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/owner",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/pointLevel",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/neighbour",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/faces",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/points",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/cellZones",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/faceZones",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/boundary",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/app/artifacts/simple_plate_case/constant/polyMesh/surfaceIndex",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [
+              "/app/input/simple_plate_params.json"
+            ],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.113509
+          }
+        ],
+        "validation_seconds": 2.2699420000000003,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "084-plate-thermal-sim/result.json"
+    },
+    {
+      "task_id": "087-spreadsheet-to-doc-table",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.09954549999999998,
+      "input_tokens": 510781,
+      "output_tokens": 8386,
+      "cache_tokens": 330816,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 1,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": true,
+        "completion_after_reminder": true,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/price.docx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/price.docx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.962906,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/app/price.docx",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.178976
+          },
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/app/price.docx",
+                "valid": false,
+                "kind": "basic_file",
+                "reason": "ValueError: Required path does not exist."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.978827
+          }
+        ],
+        "validation_seconds": 2.157803,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "087-spreadsheet-to-doc-table/result.json"
+    },
+    {
+      "task_id": "089-install-recommended-exts",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.018191080000000002,
+      "input_tokens": 119119,
+      "output_tokens": 5271,
+      "cache_tokens": 108640,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 1.121362,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 0.001118
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.1e-05
+          }
+        ],
+        "validation_seconds": 0.001129,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "089-install-recommended-exts/result.json"
+    },
+    {
+      "task_id": "090-ecs-grf-pass-rates",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.03427633,
+      "input_tokens": 133119,
+      "output_tokens": 4415,
+      "cache_tokens": 63040,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/Fundings/supported_rate.xlsx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/Fundings/supported_rate.xlsx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.075405,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Fundings/supported_rate.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.072044
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Fundings/supported_rate.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.024593
+          }
+        ],
+        "validation_seconds": 2.0966370000000003,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "090-ecs-grf-pass-rates/result.json"
+    },
+    {
+      "task_id": "092-fix-tetris-bug",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.03966429999999999,
+      "input_tokens": 279635,
+      "output_tokens": 9441,
+      "cache_tokens": 268336,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [
+            {
+              "path": "/home/user/Desktop/tetris/block.py",
+              "before_sha256": "173f6c788ba63b6fc695f00bdd28e82f362e47f99dedca8367ebb76f814fd82c"
+            },
+            {
+              "path": "/home/user/Desktop/tetris/main.py",
+              "before_sha256": "094e808b626fbd936ceb800c3b055bcb432ec12a33b477bc745cf95caa333d69"
+            },
+            {
+              "path": "/home/user/Desktop/tetris/settings.py",
+              "before_sha256": "fca04a7cc2e995f756bf9515d847d42b7447948ae53a4fbcde636f5bac2b5c13"
+            },
+            {
+              "path": "/home/user/Desktop/tetris/tetris.py",
+              "before_sha256": "59ff97d002d5810e458e025d9943dafe53097e7c49026fefcdb789d5641f9b72"
+            }
+          ],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [
+            "Python checks establish syntax, not functional bug repair."
+          ],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.964186,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Desktop/tetris/block.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              },
+              {
+                "path": "/home/user/Desktop/tetris/main.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              },
+              {
+                "path": "/home/user/Desktop/tetris/settings.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              },
+              {
+                "path": "/home/user/Desktop/tetris/tetris.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [
+              "Python checks establish syntax, not functional bug repair."
+            ],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.041513
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Desktop/tetris/block.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              },
+              {
+                "path": "/home/user/Desktop/tetris/main.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              },
+              {
+                "path": "/home/user/Desktop/tetris/settings.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              },
+              {
+                "path": "/home/user/Desktop/tetris/tetris.py",
+                "valid": true,
+                "kind": "python_syntax",
+                "reason": "Basic checks passed; semantic correctness is unverified.",
+                "changed": false
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [
+              "Python checks establish syntax, not functional bug repair."
+            ],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.155104
+          }
+        ],
+        "validation_seconds": 2.196617,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "092-fix-tetris-bug/result.json"
+    },
+    {
+      "task_id": "094-author-homepage-bookmarks",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.014760700000000002,
+      "input_tokens": 80885,
+      "output_tokens": 4316,
+      "cache_tokens": 69104,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 1.075567,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.6e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.5e-05
+          }
+        ],
+        "validation_seconds": 3.1e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "094-author-homepage-bookmarks/result.json"
+    },
+    {
+      "task_id": "099-professor-contact-info",
+      "status": "execution_error",
+      "official_reward": null,
+      "has_exception": true,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.00556798,
+      "input_tokens": 18254,
+      "output_tokens": 1248,
+      "cache_tokens": 8800,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/home/user/Desktop/Professor_Contact.xlsx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/home/user/Desktop/Professor_Contact.xlsx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.952359,
+        "max_checks": 2,
+        "check_attempts": 0,
+        "checks_performed": 0,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [],
+        "validation_seconds": 0,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "099-professor-contact-info/result.json"
+    },
+    {
+      "task_id": "100-name-mountain-photos",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0045503,
+      "input_tokens": 25235,
+      "output_tokens": 1433,
+      "cache_tokens": 22720,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [
+            {
+              "directory": "/home/user/Pictures",
+              "before": {
+                "picture1.jpg": "96a704cf18e70183fe3f785e33fdd0a9459f7926357d41ed6866c403c7bce70d",
+                "picture2.jpg": "a37387c649a322536835366b86231ac2a6e4e704529ecb5240c9a7e29e69738c",
+                "picture3.jpg": "6962e09568bd9c9371a3058adc32866ed702ec2007aa93e141d1e8e1eee9e170"
+              }
+            }
+          ],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [
+            "Rename checks preserve image bytes and require changed filenames; names are not identified."
+          ],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.050109,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Pictures",
+                "kind": "image_rename_integrity",
+                "valid": true,
+                "reason": "Image contents must be preserved and original filenames replaced; semantic names are unverified.",
+                "before_names": [
+                  "picture1.jpg",
+                  "picture2.jpg",
+                  "picture3.jpg"
+                ],
+                "after_names": [
+                  "Everest.jpg",
+                  "Fuji.jpg",
+                  "Kilimanjaro.jpg"
+                ],
+                "same_image_contents": true,
+                "original_names_removed": true
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [
+              "Rename checks preserve image bytes and require changed filenames; names are not identified."
+            ],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.02789
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/home/user/Pictures",
+                "kind": "image_rename_integrity",
+                "valid": true,
+                "reason": "Image contents must be preserved and original filenames replaced; semantic names are unverified.",
+                "before_names": [
+                  "picture1.jpg",
+                  "picture2.jpg",
+                  "picture3.jpg"
+                ],
+                "after_names": [
+                  "Everest.jpg",
+                  "Fuji.jpg",
+                  "Kilimanjaro.jpg"
+                ],
+                "same_image_contents": true,
+                "original_names_removed": true
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [
+              "Rename checks preserve image bytes and require changed filenames; names are not identified."
+            ],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.157554
+          }
+        ],
+        "validation_seconds": 2.185444,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "100-name-mountain-photos/result.json"
+    },
+    {
+      "task_id": "101-rearrange-warm-tiles",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0051067000000000005,
+      "input_tokens": 27877,
+      "output_tokens": 1902,
+      "cache_tokens": 25792,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/rearranged.png"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/rearranged.png"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.15918,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/rearranged.png",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.058474
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/rearranged.png",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.208699
+          }
+        ],
+        "validation_seconds": 2.2671729999999997,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "101-rearrange-warm-tiles/result.json"
+    },
+    {
+      "task_id": "102-daily-email-report",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.04363815,
+      "input_tokens": 298139,
+      "output_tokens": 6870,
+      "cache_tokens": 263952,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/report.xlsx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/report.xlsx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.07575,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/report.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.060572
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/report.xlsx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.065728
+          }
+        ],
+        "validation_seconds": 2.1263,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "102-daily-email-report/result.json"
+    },
+    {
+      "task_id": "103-download-blog-pdfs",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.45554419,
+      "input_tokens": 4191685,
+      "output_tokens": 22398,
+      "cache_tokens": 4110576,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/home/user/Documents/Blog"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/home/user/Documents/Blog"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [
+            {
+              "directory": "/home/user/Documents/Blog",
+              "source_urls": [
+                "https://lilianweng.github.io/posts/2023-06-23-agent/",
+                "https://lilianweng.github.io/posts/2024-02-05-human-data-quality/"
+              ],
+              "before": {},
+              "expected_count": 2
+            }
+          ],
+          "errors": [],
+          "limitations": [
+            "PDF checks use setup-declared URLs and inspect header/end markers and output count. Actual browser state, article identity, titles, and full PDF integrity are unverified."
+          ],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.142353,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/home/user/Documents/Blog",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/home/user/Documents/Blog/Example Domain_2.html",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/home/user/Documents/Blog/Example Domain.html",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/home/user/Documents/Blog/Example Domain_1.html",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/home/user/Documents/Blog",
+                "kind": "browser_pdf_outputs",
+                "valid": false,
+                "reason": "Require enough new or modified PDFs with basic header/end checks. Article correspondence is unverified.",
+                "expected_count": 2,
+                "valid_output_count": 0,
+                "source_urls": [
+                  "https://lilianweng.github.io/posts/2023-06-23-agent/",
+                  "https://lilianweng.github.io/posts/2024-02-05-human-data-quality/"
+                ],
+                "candidates": []
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [
+              "PDF checks use setup-declared URLs and inspect header/end markers and output count. Actual browser state, article identity, titles, and full PDF integrity are unverified."
+            ],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.087577
+          },
+          {
+            "status": "checked",
+            "all_valid": false,
+            "checks": [
+              {
+                "path": "/home/user/Documents/Blog",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Directory exists; required contents need separate checks."
+              },
+              {
+                "path": "/home/user/Documents/Blog/Example Domain_2.html",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/home/user/Documents/Blog/Example Domain.html",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/home/user/Documents/Blog/Example Domain_1.html",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              },
+              {
+                "path": "/home/user/Documents/Blog",
+                "kind": "browser_pdf_outputs",
+                "valid": false,
+                "reason": "Require enough new or modified PDFs with basic header/end checks. Article correspondence is unverified.",
+                "expected_count": 2,
+                "valid_output_count": 0,
+                "source_urls": [
+                  "https://lilianweng.github.io/posts/2023-06-23-agent/",
+                  "https://lilianweng.github.io/posts/2024-02-05-human-data-quality/"
+                ],
+                "candidates": []
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [
+              "PDF checks use setup-declared URLs and inspect header/end markers and output count. Actual browser state, article identity, titles, and full PDF integrity are unverified."
+            ],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.968978
+          }
+        ],
+        "validation_seconds": 2.056555,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "103-download-blog-pdfs/result.json"
+    },
+    {
+      "task_id": "105-search-cell-b6",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0082394,
+      "input_tokens": 53224,
+      "output_tokens": 2029,
+      "cache_tokens": 48784,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 1.024441,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 9e-06
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1e-05
+          }
+        ],
+        "validation_seconds": 1.9e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "105-search-cell-b6/result.json"
+    },
+    {
+      "task_id": "106-create-charles-ssh-user",
+      "status": "graded",
+      "official_reward": 1.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0028262,
+      "input_tokens": 14052,
+      "output_tokens": 1225,
+      "cache_tokens": 13072,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": false
+        },
+        "preparation_seconds": 0.921863,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 0,
+        "checks_skipped": 2,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 1.5e-05
+          },
+          {
+            "status": "not_checked",
+            "all_valid": null,
+            "checks": [],
+            "reason": "No supported file-output requirements identified; browser/system state is not file-validated.",
+            "seconds": 9e-06
+          }
+        ],
+        "validation_seconds": 2.4e-05,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "106-create-charles-ssh-user/result.json"
+    },
+    {
+      "task_id": "116-bottom-left-page-numbers",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.07039698,
+      "input_tokens": 575974,
+      "output_tokens": 12361,
+      "cache_tokens": 563872,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/LibreOffice_Open_Source_Word_Processing.docx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/LibreOffice_Open_Source_Word_Processing.docx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.211958,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/LibreOffice_Open_Source_Word_Processing.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.908147
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/LibreOffice_Open_Source_Word_Processing.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.900238
+          }
+        ],
+        "validation_seconds": 1.808385,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "116-bottom-left-page-numbers/result.json"
+    },
+    {
+      "task_id": "117-comma-text-to-table",
+      "status": "graded",
+      "official_reward": 0.0,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.09402079999999999,
+      "input_tokens": 764290,
+      "output_tokens": 13761,
+      "cache_tokens": 745136,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/Graphemes_Sound_Letter_Patterns.docx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/Graphemes_Sound_Letter_Patterns.docx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 0.970072,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Graphemes_Sound_Letter_Patterns.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.932354
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/Graphemes_Sound_Letter_Patterns.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 0.93585
+          }
+        ],
+        "validation_seconds": 1.868204,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": true
+      },
+      "result_path": "117-comma-text-to-table/result.json"
+    },
+    {
+      "task_id": "118-set-times-new-roman",
+      "status": "execution_error",
+      "official_reward": 1.0,
+      "has_exception": true,
+      "runtime_exit_code": 0,
+      "cost_usd": 2.8994558,
+      "input_tokens": 28149452,
+      "output_tokens": 77657,
+      "cache_tokens": 28115184,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/Dublin_Zoo_Intro.docx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/Dublin_Zoo_Intro.docx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.523948,
+        "max_checks": 2,
+        "check_attempts": 0,
+        "checks_performed": 0,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [],
+        "validation_seconds": 0,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "118-set-times-new-roman/result.json"
+    },
+    {
+      "task_id": "119-tabstop-sentence-split",
+      "status": "graded",
+      "official_reward": 0.9230769230769231,
+      "has_exception": false,
+      "runtime_exit_code": 0,
+      "cost_usd": 0.0320904,
+      "input_tokens": 213326,
+      "output_tokens": 6803,
+      "cache_tokens": 193552,
+      "idle_response_guard": {
+        "enabled": true,
+        "limit": 3,
+        "reminder_at": 2,
+        "reminders_sent": 0,
+        "consecutive_idle_responses": 0,
+        "action_after_reminder": false,
+        "completion_after_reminder": false,
+        "triggered": false
+      },
+      "artifact_validation": {
+        "enabled": true,
+        "scope": "Explicit outputs, public JSON declarations, accepted alternatives, discovered Python syntax, rename integrity, and basic browser-PDF checks",
+        "selector": "instruction_text_heuristic_v2",
+        "required_paths": [
+          "/app/04 CHIN9505 EBook Purchasing info 2021 Jan.docx"
+        ],
+        "manifest_paths": [],
+        "initial_snapshot": {
+          "status": "prepared",
+          "required_paths": [
+            "/app/04 CHIN9505 EBook Purchasing info 2021 Jan.docx"
+          ],
+          "declaration_sources": [],
+          "declared_output_groups": [],
+          "declaration_errors": [],
+          "alternatives": [],
+          "code_files": [],
+          "rename_groups": [],
+          "pdf_groups": [],
+          "errors": [],
+          "limitations": [],
+          "has_checks": true
+        },
+        "preparation_seconds": 1.292233,
+        "max_checks": 2,
+        "check_attempts": 2,
+        "checks_performed": 2,
+        "checks_skipped": 0,
+        "checker_errors": 0,
+        "reports": [
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/04 CHIN9505 EBook Purchasing info 2021 Jan.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.108275
+          },
+          {
+            "status": "checked",
+            "all_valid": true,
+            "checks": [
+              {
+                "path": "/app/04 CHIN9505 EBook Purchasing info 2021 Jan.docx",
+                "valid": true,
+                "kind": "basic_file",
+                "reason": "Basic checks passed; semantic correctness is unverified."
+              }
+            ],
+            "truncated": false,
+            "declaration_sources": [],
+            "declared_output_groups": [],
+            "declaration_errors": [],
+            "validation_errors": [],
+            "limitations": [],
+            "reason": "Checks cover observable structure and changes, not task correctness.",
+            "seconds": 1.091344
+          }
+        ],
+        "validation_seconds": 2.199619,
+        "limitation": "Checks do not prove semantic correctness, functional repair, correct mountain names, article correspondence, or browser/system-state correctness. No total spending cap is added."
+      },
+      "diagnostic_recovery": {
+        "reminder_sent": false
+      },
+      "result_path": "119-tabstop-sentence-split/result.json"
+    }
+  ],
+  "totals": {
+    "expected_tasks": 40,
+    "recorded_tasks": 40,
+    "tasks_with_official_reward": 38,
+    "tasks_with_exceptions": 3,
+    "complete_reward_coverage": false,
+    "mean_reward": null,
+    "available_reward_mean": 0.3221667297455631,
+    "known_cost_usd": 5.0352301100000005,
+    "total_cost_usd": 5.0352301100000005,
+    "note": "Use actual official rewards, including timeout rewards. Never replace unavailable rewards with zero. Available-reward mean is provisional if coverage is incomplete."
+  }
+}
+
+
